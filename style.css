@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+    background: url('./media/starrynight.jpg') center/cover no-repeat;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000080; 
+    color: #ffffff;
+}
+
+.scrollable-container {
+    max-height: 600px; 
+    overflow: auto;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff; 
+    text-align: center;
+    width: 60vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+.text {
+    padding: 1em;
+    color: #333; /* Adjusted text color */
+}
+
+h1 {
+    color: #FF5733; 
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%; 
+    border-radius: 5px; 
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+body.play-music {
+    animation: fadeIn 2s ease-in-out; /* Adjust the animation duration and timing function as needed */
+}
